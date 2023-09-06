@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bankmoni</title>
+    <link rel="icon" href="/assets/img/logoBank.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body class="d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+    <div class="card" style="width: 18rem;">
+        <div class="text-center">
+            <img src="/assets/img/logoBank.png" style="width: 130px;" alt="logo">
+            <h4 class="">Bankmoni</h4>
+        </div>
+        <div class="card-body">
+            <div id="sectionLogin">
+                <p class="card-text">Por favor ingrese sus datos</p>
+                <label>Usuario</label>
+                <div class="input-group mb-3">
+                    <div class="input-group-text"><i class="bi bi-person-fill"></i></div>
+                    <input id="user-name" type="text" class="form-control" placeholder="Ingrese nombre de usuario">
+                </div>
+                <label>Password</label>
+                <div class="input-group mb-3">
+                    <div class="input-group-text"><i class="bi bi-lock-fill"></i></div>
+                    <input id="user-password" type="password" class="form-control" placeholder="Ingrese contraseña">
+                </div>
+                <a id="btnLogin" href="#" class="btn btn-danger">Acceso</a>
+            </div>
+
+            <br>
+
+            <div id="sectionOperacion">
+                <div id="seccionOperacion">
+                    <p class="card-text">Ingrese operación a realizar</p>
+                    <p id="total">Saldo actual: $<span id="saldo">540</span></p>
+                    <br>
+
+                    <label for="seleccion-operacion">Elegir operacion</label>
+                    <select id="seleccion-operacion" class="form-select">
+                        <option value="1">Deposito</option>
+                        <option value="2">Retiro</option>
+                    </select>
+
+                    <br>
+                    <div class="input-group mb-3">
+                        <div class="input-group-text"><i class="bi bi-cash"></i></div>
+                        <input id="user-monto" type="text" class="form-control" placeholder="Ingrese monto">
+                    </div>
+                    <a href="#" id="btnEjecucion" class="btn btn-danger">Realizar operación</a>
+                    <a href="#" id="btnsalir" class="btn btn-danger">Salir</a>
+                </div>
+            </div>
+            
+        
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="/assets/js/index.js"></script>
+</body>
+</html>
