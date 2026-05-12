@@ -6,12 +6,8 @@ body {
     margin-top: 50px;
 }
 
-.card-body {
-    background-color: #ffffff; 
-}
-
 .form-control::placeholder {
-    color: #969696; 
+    color: #adb5bd; 
     font-style: italic; 
 }
 

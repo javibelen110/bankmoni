@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body class="d-flex justify-content-center align-items-center" style="min-height: 100vh;">
-    <div class="card" style="width: 18rem;">
+    <div class="card bg-body shadow" style="width: 18rem;">
         <div class="text-center">
             <img src="./assets/img/logoBank.png" style="width: 130px;" alt="logo">
             <h4 class="">Bankmoni</h4>
         </div>
         <div class="card-body">
+            <button onclick="cambiarTema()" class="btn rounded-fill"><i id="dl-icon" class="bi bi-moon-fill"></i></button>
             <div id="sectionLogin">
                 <p class="card-text">Por favor ingrese sus datos</p>
                 <label>Usuario</label>
