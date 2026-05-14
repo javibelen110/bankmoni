@@ -23,9 +23,10 @@ def home():
  
 @app.post("/register")
 def registrar(usuario: Usuario):
+    nombre = usuario.username.lower()
     if usuario.username in usuarios_db:
         return {"error": "El usuario ya existe."}
-    usuarios_db[usuario.username] = usuario.pin
+    usuarios_db[nombre] = usuario.pin
     return {"mensaje": f"Usuario {usuario.username} registrado exitosamente."}
  
 @app.post("/login")
